@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+
+  <link rel="icon" href="icon/wine_4698216.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=BBH+Sans+Bogle&family=Diphylleia&family=Gasoek+One&family=Gowun+Batang&family=Gravitas+One&family=Jua&family=Playwrite+DE+SAS:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=WDXL+Lubrifont+SC&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <section class="테두리">
+    <!-- 네비 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="icon/wine_4698216.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#program">Program/Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#brand">Brands/Exhibitors</a></li>
+            <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Sponsors</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html"
+              id="loginBtn"   style="border: 3px solid transparent;overflow: hidden; margin-left:auto;">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 네비 -->
+
+    <!-- 배너 -->
+    <div class="img">
+      <div class="letters">
+        <span>T</span><span>A</span><span>S</span><span>T</span><span>E</span>
+      </div>
+      <div class="letters">
+        <span>D</span><span>I</span><span>S</span><span>C</span><span>O</span><span>V</span><span>E</span><span>R</span>
+      </div>
+
+      <span>와인의 세계, 새로운 맛의 여정으로 초대합니다.</span>
+      <div class="divider"></div>
+    </div>
+    <!-- 배너 -->
+
+    <!--카드 -->
+    <div class="card-sec">
+      <div class="card-wrap" data-aos="fade-up">
+        <div class="card" style="width: 18rem;">
+          <i class="fa-solid fa-landmark-dome"></i>
+          <div class="card-body">
+            <h4 class="card-title">역사 (History)</h4>
+            <p class="card-text">와인의 역사 및 와인 박람회 역사.</p>
+          </div>
+        </div>
+        <a href="#" class="card" style="width: 18rem;">
+          <i class="fa-solid fa-circle-info"></i>
+          <div class="card-body">
+            <h5 class="card-title">소개 (About)</h5>
+            <p class="card-text">박람회 취지, 연혁, 주요 내용</p>
+          </div>
+        </a>
+        <a href="#program" class="card" style="width: 18rem;">
+          <i class="fa-solid fa-calendar-minus"></i>
+          <div class="card-body">
+            <h4 class="card-title">프로그램 (Program)</h4>
+            <p class="card-text">시음회, 부스, 클래스 등</p>
+          </div>
+        </a>
+        <a href="pre.html" class="card" style="width: 18rem;">
+          <i class="fa-solid fa-ticket"></i>
+          <div class="card-body">
+            <h4 class="card-title">티켓 (Tickets)</h4>
+            <p class="card-text">티켓 구매 방법, 가격, 할인 정보</p>
+          </div>
+        </a>
+        <a href="#location" class="card" style="width: 18rem;">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="card-body">
+            <h4 class="card-title">위치 (Location)</h4>
+            <p class="card-text">행사장 위치, 주차 및 교통 안내</p>
+          </div>
+        </a>
+        <a href="#" class="card" style="width: 18rem;">
+          <i class="fa-solid fa-headset"></i>
+          <div class="card-body">
+            <h4 class="card-title">문의 (Contact)</h4>
+            <p class="card-text">문의사항, 고객센터 연락처, FAQ</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!--카드 -->
+
+    <!-- 카드2 & 지도 -->
+    <div class="wrap" data-aos="fade-up">
+      <div>
+        <h5>Exhibitor registration</h5>
+        <section class="join">
+          <a href="#" id="goApplyBtn">
+            <div class="appli" style="background-image:url(img/australia-3857041_1280.jpg);">
+              <h3 class="bold">전시참가 신청</h3>
+              <p>모든 브랜드를 환영합니다.</p>
+            </div>
+          </a>
+
+          <a href="pre.html">
+            <div class="appli" style="background-image:url(img/wine-2773374_1280.jpg);">
+              <h3 class="bold">일반 관람 신청</h3>
+              <p>다양한 와인을 경험할 수 있습니다.</p>
+            </div>
+          </a>
+          <a href="pre2.html">
+            <div class="appli" style="background-image:url(img/agreement-2548138_1280.jpg);">
+              <h3 class="bold">바이어 사전등록</h3>
+              <p>사전등록을 통해 원하는 업체와 1:1 미팅 매칭 서비스를 제공합니다.</p>
+            </div>
+          </a>
+        </section>
+      </div>
+
+      <div id="location">
+        <h5>Location</h5>
+        <iframe class="지도"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.3934962396124!2d126.83793387593536!3d35.14680595914605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3571891688afcf47%3A0x3104edb41cd7cf1d!2z6rmA64yA7KSR7Luo67Kk7IWY7IS87YSw!5e0!3m2!1sko!2skr!4v1762150379559!5m2!1sko!2skr"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <!-- 카드2 & 지도 -->
+
+    <!-- 미캔 -->
+    <div data-aos="fade-up"
+      style='position: relative; width: 100%; height: 0; padding-top: 56.25%; overflow: hidden; will-change: transform;'>
+      <iframe loading='lazy' id="program"
+        style='position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;'
+        src='https:&#x2F;&#x2F;www.miricanvas.com&#x2F;v2&#x2F;design2&#x2F;v&#x2F;adfbcfa0-2716-4cea-81b0-9e27ec16e76c?mode=embed'>
+      </iframe>
+    </div>
+    <!-- 미캔 -->
+
+    <!-- 갤러리 -->
+    <div class="gallery" data-aos="fade-up">
+      <div class="gallery-header">
+        <h5>GALLERY</h5>
+        <p id="moreBtn">+ 더보기</p>
+      </div>
+
+      <div class="video-wrapper coll" id="videoWrapper">
+        <div class="row">
+
+          <div class="column">
+            <video data-aos="fade-up" muted autoplay loop src="video/3197862-hd_1920_1080_25fps.mp4"></video>
+            <video data-aos="fade-up" muted autoplay loop src="video/3136626-hd_1920_1080_30fps.mp4"></video>
+          </div>
+
+          <div class="column">
+            <video data-aos="fade-up" muted autoplay loop src="video/3189297-hd_1080_1920_25fps.mp4"></video>
+            <video data-aos="fade-up" muted autoplay loop src="video/4694345-sd_338_640_25fps.mp4"></video>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+    <!-- 갤러리 -->
+
+
+    <!---->
+    <section class="brand" id="brand">
+      <div class="brand-text">
+        <p>
+          <strong>참여 브랜드</strong><br>
+          광주국제주류 & 와인박람회 (주)한국국제전시<br>
+          서울시 영등포구 국제금융로 6길 33, 1116호(여의도동)<br>
+          Tel. 02-761-2516, 2526 Fax. 02-761-2517<br>
+          E-mail. info@kiexpo.com
+        </p>
+      </div>
+
+      <!-- 로고애니메이션-->
+      <div class="brand-logos">
+        <div class="logo-track">
+          <img src="spon/public-domain-vectors-6vXuamI0WRY-unsplash.png" alt="">
+          <img src="spon/public-domain-vectors-dFUC0agUgKM-unsplash.png" alt="">
+          <img src="spon/round-icons-u1tMOgFxoqI-unsplash.png" alt="">
+          <img src="spon/round-icons-zunivDntgTM-unsplash.png" alt="">
+          <img src="spon/basketball-logo-4659385_640.png" alt="">
+          <img src="spon/coffee-307147_640.png" alt="">
+          <img src="spon/farm-7098017_640.png" alt="">
+          <img src="spon/logo-2067396_1280.png" alt="">
+          <img src="spon/public-domain-vectors-6vXuamI0WRY-unsplash.png" alt="">
+          <img src="spon/public-domain-vectors-dFUC0agUgKM-unsplash.png" alt="">
+          <img src="spon/round-icons-u1tMOgFxoqI-unsplash.png" alt="">
+          <img src="spon/round-icons-zunivDntgTM-unsplash.png" alt="">
+          <img src="spon/basketball-logo-4659385_640.png" alt="">
+          <img src="spon/coffee-307147_640.png" alt="">
+          <img src="spon/farm-7098017_640.png" alt="">
+          <img src="spon/logo-2067396_1280.png" alt="">
+          <img src="spon/public-domain-vectors-6vXuamI0WRY-unsplash.png" alt="">
+          <img src="spon/public-domain-vectors-dFUC0agUgKM-unsplash.png" alt="">
+          <img src="spon/round-icons-u1tMOgFxoqI-unsplash.png" alt="">
+          <img src="spon/round-icons-zunivDntgTM-unsplash.png" alt="">
+          <img src="spon/basketball-logo-4659385_640.png" alt="">
+          <img src="spon/coffee-307147_640.png" alt="">
+          <img src="spon/farm-7098017_640.png" alt="">
+          <img src="spon/logo-2067396_1280.png" alt="">
+          <img src="spon/public-domain-vectors-6vXuamI0WRY-unsplash.png" alt="">
+          <img src="spon/public-domain-vectors-dFUC0agUgKM-unsplash.png" alt="">
+          <img src="spon/round-icons-u1tMOgFxoqI-unsplash.png" alt="">
+          <img src="spon/round-icons-zunivDntgTM-unsplash.png" alt="">
+          <img src="spon/basketball-logo-4659385_640.png" alt="">
+          <img src="spon/coffee-307147_640.png" alt="">
+          <img src="spon/farm-7098017_640.png" alt="">
+          <img src="spon/logo-2067396_1280.png" alt="">
+          <img src="spon/public-domain-vectors-6vXuamI0WRY-unsplash.png" alt="">
+          <img src="spon/public-domain-vectors-dFUC0agUgKM-unsplash.png" alt="">
+          <img src="spon/round-icons-u1tMOgFxoqI-unsplash.png" alt="">
+          <img src="spon/round-icons-zunivDntgTM-unsplash.png" alt="">
+          <img src="spon/basketball-logo-4659385_640.png" alt="">
+          <img src="spon/coffee-307147_640.png" alt="">
+          <img src="spon/farm-7098017_640.png" alt="">
+          <img src="spon/logo-2067396_1280.png" alt="">
+        </div>
+
+      </div>
+      <!-- 로고애니메이션-->
+    </section>
+    <!---->
+
+
+
+    <!-- 하단 디데이 -->
+    <footer>
+      <a id="d-day">D-?</a>
+      <span id="remaining">YYYY.MM.DD(요일)</span>
+    </footer>
+    <!-- 하단 디데이 -->
+
+
+  </section>
+
+
+  <!-- 드래그 가능 팝업창 -->
+  <div class="pop-wrap" >
+    <div class="header" style="text-align: right;">
+      <img class="cancel" style="width: 20px; " src="icon/cancel_close_delete_exit_logout_remove_x_icon_123217.png"
+        alt="">
+    </div>
+    <div class="pop-img">
+    </div>
+
+
+
+
+
+
+
+    <!-- 스크립트 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--접기-->
+    <script>
+      const moreBtn = document.getElementById('moreBtn');
+      const videoWrapper = document.getElementById('videoWrapper');
+
+      moreBtn.addEventListener('click', () => {
+        const expanded = videoWrapper.classList.toggle('expand');
+
+        if (expanded) {
+          videoWrapper.classList.remove('coll');
+          moreBtn.textContent = '접기 ▲';
+        } else {
+          videoWrapper.classList.add('coll');
+          moreBtn.textContent = '+ 더보기';
+        }
+      });
+
+
+
+    </script>
+
+    <!--비디오-->
+    <script>
+      //비디오 속도 조절 
+      const v = document.querySelector(".my_video");
+
+      v.playbackRate = 0.4;
+
+    </script>
+
+    <!--날짜계산-->
+    <script>
+      function updateDday() {
+        const targetDate = new Date("2026-10-16");
+        const today = new Date();
+
+        const diffTime = targetDate - today;
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        const weekdays = ['일', '월', '화', '수', '목', '금', '토'];
+        const dayName = weekdays[targetDate.getDay()];
+
+        // 날짜 포맷
+        const dateStr = `${targetDate.getFullYear()}. ${String(targetDate.getMonth() + 1).padStart(2, '0')}. ${String(targetDate.getDate()).padStart(2, '0')}(${dayName})`;
+
+
+        const ddayEl = document.getElementById("d-day");
+        const remainEl = document.getElementById("remaining");
+
+        if (diffDays > 0) {
+          ddayEl.textContent = `D-${diffDays}`;
+        } else if (diffDays === 0) {
+          ddayEl.textContent = "D-DAY!";
+        }
+
+        remainEl.textContent = dateStr;
+      }
+
+      updateDday();
+      setInterval(updateDday, 86400000);
+    </script>
+    <script>
+
+      //일수변환
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+    </script>
+
+
+
+<!-- 움직일 수 있는 팝업창 -->
+    <script>
+
+      const wrap = document.querySelector(".pop-wrap");
+      const header = document.querySelector(".header");
+      const cancel = document.querySelector(".cancel");
+
+
+      let lastX = 0;
+      let lastY = 0;
+      let startX = 0;
+      let startY = 0;
+
+      // 1.
+      header.addEventListener('mousedown', function (e) {
+        e.preventDefault();
+        startX = e.clientX;
+        startY = e.clientY;
+
+        // 2.  
+        header.classList.add('active');
+
+        // 3.
+        document.addEventListener('mouseup', onRemoveEvent);
+
+        // 4.
+        document.addEventListener('mousemove', onMove);
+      });
+
+      function onRemoveEvent() {
+        header.classList.remove('active');
+        document.removeEventListener('mouseup', onRemoveEvent);
+        document.removeEventListener('mousemove', onMove);
+      }
+
+      function onMove(e) {
+        e.preventDefault();
+        lastX = startX - e.clientX;
+        lastY = startY - e.clientY;
+
+        startX = e.clientX;
+        startY = e.clientY;
+
+        wrap.style.top = `${wrap.offsetTop - lastY}px`;
+        wrap.style.left = `${wrap.offsetLeft - lastX}px`;
+      }
+
+
+      cancel.addEventListener("click", function(){
+            wrap.style.display = "none"
+
+      })
+
+    </script>
+
+<!--로그인 확인 여부-->
+ <script>
+    document.getElementById("goApplyBtn").addEventListener("click", function() {
+      
+      
+      const isLoggedIn = localStorage.getItem("loggedIn");
+      const target = "pre1.html"; 
+
+      if (isLoggedIn) {
+        // 로그인되어 있으면 바로 이동
+        window.location.href = target;
+      } else {
+        // 로그인 안 되어 있으면 로그인 페이지로 이동
+        const nextUrl = encodeURIComponent(target);
+        window.location.href = `login.html?next=${nextUrl}`;
+      }
+    });
+
+
+const loginBtn = document.getElementById("loginBtn");
+const isLoggedIn = localStorage.getItem("loggedIn");
+
+if (isLoggedIn) {
+  loginBtn.textContent = "Logout"; // 텍스트 변경
+  loginBtn.href = "#"; // 기존 로그인 링크 제거
+
+  loginBtn.addEventListener("click", function() {
+    // 로그아웃 처리
+    localStorage.removeItem("loggedIn");
+    alert("로그아웃 되었습니다.");
+    location.reload(); // 페이지 새로고침
+  });
+}
+
+
+
+  </script>
+</body>
+
+</html>

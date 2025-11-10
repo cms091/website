@@ -1,0 +1,223 @@
+* {
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+
+
+}
+
+.테두리 {
+  /* border: 5px solid red; */
+  width: 70%;
+  position: relative;
+  margin: auto;
+  overflow-x: hidden;
+
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+  -ms-overflow-style: none;
+
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.signup-wrap {
+  width: 400px;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px); /* 💡 블러 효과 */
+  text-align: left;
+  margin: auto;
+}
+
+.signup-wrap > h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#signup-form > input {
+  width: 100%;
+  height: 48px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ddd;
+  font-size: 15px;
+  color: #333;
+  
+}
+
+#login-form > input::placeholder {
+  color: #aaa;
+}
+
+#btn{
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  background:darkred;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+
+}
+
+
+#btn:hover {
+    background: rgb(43, 43, 43);
+
+}
+
+#login-form label {
+  font-size: 14px;
+  color: #333;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.center{
+  text-align: center;
+  a{
+    text-decoration: none;
+    color: #aaa;
+  }
+}
+
+
+
+
+
+.email {
+  width: 49%;
+  height: 48px;
+
+  border: 0;
+  border-color: lightgray;
+  border-radius: 7px;
+  outline: none;
+  padding-left: 10px;
+   border: 1px solid #ddd;
+  font-size: 15px;
+  color: #333;
+}
+
+
+select {
+  width: 42%;
+  height: 48px;
+  font-size: 15px;
+  border: 1;
+  border-color: lightgray;
+  border-radius: 7px;
+  outline: none;
+  padding-left: 10px;
+}
+
+#btn{
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  background:darkred;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+}
+
+
+#btn:hover {
+    background: rgb(43, 43, 43);
+
+}
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  font-family: "Diphylleia", serif;
+  font-weight: 600;
+  margin: auto;
+    top: 0;
+a{
+  text-align: center;
+}
+
+}
+.nav-item{
+border: 3px solid transparent; }
+
+.navbar-nav {
+  display: flex;
+  width: 100%;
+}
+
+.nav-item:hover {
+border-bottom: 3px solid darkred;
+}
+
+.nav-item:nth-of-type(5) {
+  margin-left: auto;
+}
+
+
+.logo {
+  height: 50px;
+}
+
+input {
+  width: 100%;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .테두리 {
+    width: 100%;
+  }
+
+  .login-wrapper {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+
+   .nav-item:nth-of-type(5) {
+    margin: 0;
+}
+
+}
