@@ -1,0 +1,222 @@
+* {
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+
+  
+}
+
+.테두리{
+  /* border: 5px solid red; */
+  width: 70%;
+  position: relative;
+  margin: auto;
+    overflow-x: hidden;
+
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+  -ms-overflow-style: none;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  font-family: "Diphylleia", serif;
+  font-weight: 600;
+  margin: auto;
+a{
+  text-align: center;
+}
+
+}
+.nav-item{
+border: 3px solid transparent; }
+
+.navbar-nav {
+  display: flex;
+  width: 100%;
+}
+
+.nav-item:hover {
+border-bottom: 3px solid darkred;
+}
+
+.nav-item:nth-of-type(5) {
+  margin-left: auto;
+}
+
+
+.logo {
+  height: 50px;
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+
+.box {
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    padding: 20px 40px;
+    margin-bottom: 40px;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+.여백 {
+  padding-top: 120px;
+  width: 50%;
+  margin: auto;
+}
+
+
+.sr-only {
+    width: 1;
+    height: 1;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+label::before {
+    content: '';
+    background-image: url('../icon/stop_545666.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: -2px;
+    margin-right: 4px;
+}
+
+input:checked+label::before {
+    background-image: url('../icon/check_3991408.png');
+}
+
+
+
+
+.login-wrapper {
+  width: 400px;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px); /* 💡 블러 효과 */
+  text-align: left;
+  margin: auto;
+}
+
+.login-wrapper > h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#login-form > input {
+  width: 100%;
+  height: 48px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ddd;
+  font-size: 15px;
+  color: #333;
+}
+
+#login-form > input::placeholder {
+  color: #aaa;
+}
+
+#btn{
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  background:darkred;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+
+}
+
+
+#btn:hover {
+    background: rgb(43, 43, 43);
+
+}
+
+#login-form label {
+  font-size: 14px;
+  color: #333;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.center{
+  text-align: center;
+  a{
+    text-decoration: none;
+    color: #aaa;
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+.테두리{
+  width: 100%;
+}
+
+  .login-wrapper {
+    width: 90%;
+    padding: 30px 20px;
+  }
+  .btn{
+    margin: auto;
+    
+  }
+  .nav-item:nth-of-type(5) {
+    margin: 0;
+}
+
+
+}
