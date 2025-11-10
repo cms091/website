@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="icon" href="icon/wine_4698216.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=BBH+Sans+Bogle&family=Diphylleia&family=Gasoek+One&family=Gowun+Batang&family=Gravitas+One&family=Jua&family=Playwrite+DE+SAS:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=WDXL+Lubrifont+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <section class="테두리">
+    <!-- 네비 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="icon/wine_4698216.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#program">Program/Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#brand">Brands/Exhibitors</a></li>
+            <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Sponsors</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html"
+                style="border: 3px solid transparent;overflow: hidden; margin-left:auto;">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 네비 -->
+
+
+
+
+        <div class="login-wrapper">
+            <h2 style="font-weight: 800; font-size: 30px;">Login</h2>
+            <form method="" action="index.html" id="login-form">
+                <input class="text" type="text" id="id" placeholder="ID" required>
+                <input type="password" id="pw" placeholder="Password" required>
+                <input class="sr-only" type="checkbox" id="remember-check">
+
+                <label for="remember-check">
+                    아이디 저장하기
+                </label>
+
+                <button id="btn" type="submit">Login</button>
+                <div class="center"><a href="join.html">회원가입</a></div>
+            </form>
+        </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- 유효성검사 -->
+    <script>
+        const login_id = document.querySelector('#id');
+        const login_pw = document.querySelector('#pw');
+        const login_btn = document.querySelector('#btn');
+
+
+        login_btn.addEventListener("click", function () {
+
+
+            if (login_id.value == "") {
+                alert(" 로그인을 할 수 없습니다. 아이디를 적어주세요.")
+            } else if (login_pw.value == "") {
+                alert(" 로그인을 할 수 없습니다. 비밀번호를 적어주세요.")
+            }
+            else {
+                alert("로그인 완료. 환영합니다.");
+
+
+                // 로그인 성공 처리 (임시로 localStorage에 저장)
+                localStorage.setItem("loggedIn", "true");
+
+                // 로그인 후 이동할 페이지
+                const params = new URLSearchParams(window.location.search);
+                const next = params.get("next") || "index.html";
+                window.location.href = next;
+            }
+        })
+    </script>
+
+
+
+    <!-- 애니메이션 효과 / 부트캠프 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 애니메이션 효과 / 부트캠프 -->
+
+
+
+
+
+</body>
+
+</html>
