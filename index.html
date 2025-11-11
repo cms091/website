@@ -405,19 +405,18 @@
 
 <!--로그인 확인 여부-->
  <script>
-  document.getElementById("goApplyBtn").addEventListener("click", function () {s
+document.getElementById("goApplyBtn").addEventListener("click", function () {
     const loggedInUser = sessionStorage.getItem("loggedInUser");
 
-
     if (loggedInUser) {
-      window.location.href = "pre1.html";
-    } else {
     
-      const nextUrl = encodeURIComponent(target);
-      window.location.href = `login.html?next=${nextUrl}`;
+        window.location.href = "pre1.html";
+    } else {
+  
+        const nextUrl = encodeURIComponent("pre1.html");
+        window.location.href = `login.html?next=${nextUrl}`;
     }
-  });
-
+});
   const loginBtn = document.getElementById("loginBtn");
   const loggedInUser = sessionStorage.getItem("loggedInUser");
 
@@ -436,7 +435,6 @@
       location.reload(); 
     });
   } else {
-
     loginBtn.textContent = "Login";
     loginBtn.href = "login.html";
   }
