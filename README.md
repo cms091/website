@@ -1,39 +1,64 @@
-# Website 소개
-국제와인박람회를 주제로 한 웹사이트. 
+# International Wine Expo Website
 
-박람회 일정 제공 및 관련 정보 제공, 티켓 판매 등 고객들을 위한 정보 및 사전예약 서비스 제공이 주가 되는 사이트입니다. 
+## 웹사이트 소개
+국제 와인 박람회를 주제로 한 웹사이트입니다.  
+방문객은 박람회 일정, 프로그램, 위치 정보를 확인하고, 티켓을 사전 예약할 수 있으며, 부스 신청도 가능합니다.  
 
-# 배포 링크
-https://cms091.github.io/website/
+**주요 목적:**  
+- 방문객에게 박람회 정보를 제공  
+- 사전 예약 및 부스 신청 기능 제공 (UI 구현만)  
 
-# 구현 기능 
-- 네비게이션, 일정, 프로그램, 위치, 갤러리 등등으로 구성된 메인 페이지 구현
-- 로그인 , 회원가입 화면 구현(데이터 연동 기능X, 화면만)
-- 로그인 여부에 따라서 접속 가능한 페이지 분리 및 일부 화면 변동
-- 와인박람회 부스 신청, 관람객 사전예매, 바이어 사전예매 할 수 있는 폼 서브 페이지 구현
+---
 
+## 배포 링크
+[GitHub Pages 링크](https://cms091.github.io/website/)  
 
-# 디자인 구상
-## `피그마`
-### 데스크톱 버전(기본)
-<img width="1025" height="751" alt="image" src="https://github.com/user-attachments/assets/7b312ff3-faff-4bbb-a0f0-33160b4624f3" />
+---
 
-### 모바일 버전(반응형)
-<img width="308" height="650" alt="image" src="https://github.com/user-attachments/assets/d35ef679-5cff-40bf-85d8-de80ecf8cdeb" />
+## 기술 스택
+- HTML / CSS / JavaScript 활용
 
-## `와이어프레임`
+---
+
+## 구현 기능
+
+| 기능 | 구현 여부 | 비고 |
+|------|----------|------|
+| 메인 페이지 (네비게이션, 일정, 프로그램, 위치, 갤러리) | 구현 | 디자인 기반 |
+| 로그인 화면 | 구현 | 실제 서버X 로컬 스토리지로 UI만 구현 |
+| 회원가입 화면 | 구현 | 실제 서버X 로컬 스토리지로 UI만 구현|
+| 로그인 여부에 따른 페이지 접근 제한 | 구현 | UI/화면만 변경 |
+| 와인 박람회 부스 신청 | 구현 | 폼 UI |
+| 관람객 사전 예약 | 구현 | 폼 UI |
+| 바이어 사전 예약 | 구현 | 폼 UI |
+
+---
+
+## 디자인 구상
+
+### 피그마
+- **데스크톱 버전**
+![데스크톱 디자인](https://github.com/user-attachments/assets/7b312ff3-faff-4bbb-a0f0-33160b4624f3)
+
+- **모바일 버전 (반응형)**
+![모바일 디자인](https://github.com/user-attachments/assets/d35ef679-5cff-40bf-85d8-de80ecf8cdeb)
+
+### 와이어프레임
 ![와이어프레임](https://github.com/user-attachments/assets/109ebd37-b595-4705-9c3c-65d3155150bf)
 
+---
 
-## 메인 페이지 🎨 디자인 vs 구현 비교
+## 메인 페이지: 디자인 vs 구현
 
-| 디자인 (Figma) | 구현 화면       |
-|-----------------|----------------|
-|<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/7b312ff3-faff-4bbb-a0f0-33160b4624f3" /> |<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/0282ee3b-e7ec-4ec8-a154-df8af32ce6d4" /> |
-|<img width="150" height="300" alt="image" src="https://github.com/user-attachments/assets/d35ef679-5cff-40bf-85d8-de80ecf8cdeb" />          |      <img width="150" height="300" alt="image" src="https://github.com/user-attachments/assets/b4bbd307-b697-4a63-a568-f5cc956779e9" /> |
+| 디자인 (Figma) | 구현 화면 |
+|----------------|-----------|
+|![디자인](https://github.com/user-attachments/assets/7b312ff3-faff-4bbb-a0f0-33160b4624f3) | ![구현](https://github.com/user-attachments/assets/0282ee3b-e7ec-4ec8-a154-df8af32ce6d4) |
 
+> 주요 구현 사항: 반응형 레이아웃, 이미지/비디오 슬라이더, 폼 UI  
 
-# 전체 페이지 구조 및 화면
+---
+
+## 전체 페이지 구조
 ```
 📦website(root)
  ┣ 📂css(스타일)
@@ -85,17 +110,29 @@ https://cms091.github.io/website/
  ┣ 📜pre1.html(업자 부스 신청)
  ┗ 📜pre2.html(바이어 사전예약)
 ```
-<img width="639" height="671" alt="image" src="https://github.com/user-attachments/assets/d5f2e41b-e06b-445a-9e01-4fc07e5e4c6f" />
-<img width="500" height="219" alt="image" src="https://github.com/user-attachments/assets/fedc4cf7-ddf2-43e1-9a83-fe4fb645fcd4" />
-<img width="497" height="270" alt="image" src="https://github.com/user-attachments/assets/a4f8d93d-bb7d-4719-8679-b5f3a7c4a9a4" />
-<img width="500" height="778" alt="image" src="https://github.com/user-attachments/assets/25243f65-4532-430e-8dc7-b904ad092847" />
-<img width="496" height="570" alt="image" src="https://github.com/user-attachments/assets/0b7651ac-883e-4e28-953a-6631b7ff5c2b" />
-<img width="499" height="665" alt="image" src="https://github.com/user-attachments/assets/7227ad14-21c1-4820-b9c5-18747029f030" />
+
+> 페이지 설명:  
+- `index.html`: 메인 페이지  
+- `join.html`: 회원가입 UI  
+- `login.html`: 로그인 UI  
+- `pre.html`: 관람객 사전 예약 폼  
+- `pre1.html`: 부스 신청 폼  
+- `pre2.html`: 바이어 사전 예약 폼
+  
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d5f2e41b-e06b-445a-9e01-4fc07e5e4c6f" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/fedc4cf7-ddf2-43e1-9a83-fe4fb645fcd4" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/a4f8d93d-bb7d-4719-8679-b5f3a7c4a9a4" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/25243f65-4532-430e-8dc7-b904ad092847" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/0b7651ac-883e-4e28-953a-6631b7ff5c2b" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/7227ad14-21c1-4820-b9c5-18747029f030" />
+
+---
+
+## 외부 리소스
 
 
-# 사용한 외부 링크 및 사이트
-- https://unsplash.com/ko (이미지)
-- https://pixabay.com/ko/ (이미지)
-- https://getbootstrap.com/ (html/css 템플릿)
-- https://www.miricanvas.com/templates (html/ 이미지 템플릿)
-- https://kr.freepik.com/icons (아이콘)
+|   이미지 |  템플릿  |  아이콘  | 
+|---------|----------|---------|
+| [Unsplash](https://unsplash.com/ko), [Pixabay](https://pixabay.com/ko/)  | [Bootstrap](https://getbootstrap.com/),[Miricanvas](https://www.miricanvas.com/templates)  | [Freepik](https://kr.freepik.com/icons)  |
+
+---
