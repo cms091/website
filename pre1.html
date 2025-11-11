@@ -178,17 +178,17 @@
                     <td>
 						<input required type="text" >
                     </td>
-					<th>세금계산서 이메일*</th>
+					<th>세금계산서 이메일</th>
                     <td>
                         <input required type="email" >
                     </td>
                 </tr>
 				<tr>
-                    <th>휴대폰 번호*</th>
+                    <th>휴대폰 번호</th>
                     <td>
                         <input required type="text" placeholder="숫자만 입력해주세요." oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                     </td>
-					<th>참가신청 조회 비밀번호*</th>
+					<th>참가신청 조회 비밀번호</th>
                     <td>
                         <input required type="password" value="" maxlength="4" placeholder="최대 4자리까지 숫자만 입력해주세요." oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                     </td>
@@ -218,25 +218,24 @@
     <!-- 애니메이션 효과 / 부트캠프 -->
  
  <script>
-    const isLoggedIn = localStorage.getItem("loggedIn");
-    if (!isLoggedIn) {
-      const nextUrl = encodeURIComponent(window.location.pathname);
-      window.location.href = `/login.html?next=${nextUrl}`;
-    }
+ const loginBtn = document.getElementById("loginBtn");
+  const loggedInUser = sessionStorage.getItem("loggedInUser");
 
+  if (loggedInUser) {
+   
+    const userData = JSON.parse(localStorage.getItem(loggedInUser));
+    const userName = userData && userData.name ? userData.name : loggedInUser;
 
+    loginBtn.textContent = `${userName} (Logout)`; 
+    loginBtn.href = "#";
 
-    if (isLoggedIn) {
-  loginBtn.textContent = "Logout"; // 텍스트 변경
-  loginBtn.href = "#"; // 기존 로그인 링크 제거
-
-  loginBtn.addEventListener("click", function() {
-    // 로그아웃 처리
-    localStorage.removeItem("loggedIn");
-    alert("로그아웃 되었습니다.");
-    location.reload(); // 페이지 새로고침
-  });
-}
+    
+    loginBtn.addEventListener("click", function () {
+      sessionStorage.removeItem("loggedInUser");
+      alert("로그아웃 되었습니다.");
+    window.location.href = "login.html";
+    });
+  }
 
 
   </script>

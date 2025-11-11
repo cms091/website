@@ -234,19 +234,23 @@
 
 <script>
 const loginBtn = document.getElementById("loginBtn");
-const isLoggedIn = localStorage.getItem("loggedIn");
+  const loggedInUser = sessionStorage.getItem("loggedInUser");
 
-if (isLoggedIn) {
-  loginBtn.textContent = "Logout"; // 텍스트 변경
-  loginBtn.href = "#"; // 기존 로그인 링크 제거
+  if (loggedInUser) {
+   
+    const userData = JSON.parse(localStorage.getItem(loggedInUser));
+    const userName = userData && userData.name ? userData.name : loggedInUser;
 
-  loginBtn.addEventListener("click", function() {
-    // 로그아웃 처리
-    localStorage.removeItem("loggedIn");
-    alert("로그아웃 되었습니다.");
-    location.reload(); // 페이지 새로고침
-  });
-}
+    loginBtn.textContent = `${userName} (Logout)`; 
+    loginBtn.href = "#";
+
+    
+    loginBtn.addEventListener("click", function () {
+      sessionStorage.removeItem("loggedInUser");
+      alert("로그아웃 되었습니다.");
+      location.reload(); 
+    });
+  }
 
 
 

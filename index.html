@@ -405,41 +405,42 @@
 
 <!--로그인 확인 여부-->
  <script>
-    document.getElementById("goApplyBtn").addEventListener("click", function() {
-      
-      
-      const isLoggedIn = localStorage.getItem("loggedIn");
-      const target = "pre1.html"; 
-
-      if (isLoggedIn) {
-        // 로그인되어 있으면 바로 이동
-        window.location.href = target;
-      } else {
-        // 로그인 안 되어 있으면 로그인 페이지로 이동
-        const nextUrl = encodeURIComponent(target);
-        window.location.href = `login.html?next=${nextUrl}`;
-      }
-    });
+  document.getElementById("goApplyBtn").addEventListener("click", function () {s
+    const loggedInUser = sessionStorage.getItem("loggedInUser");
 
 
-const loginBtn = document.getElementById("loginBtn");
-const isLoggedIn = localStorage.getItem("loggedIn");
-
-if (isLoggedIn) {
-  loginBtn.textContent = "Logout"; // 텍스트 변경
-  loginBtn.href = "#"; // 기존 로그인 링크 제거
-
-  loginBtn.addEventListener("click", function() {
-    // 로그아웃 처리
-    localStorage.removeItem("loggedIn");
-    alert("로그아웃 되었습니다.");
-    location.reload(); // 페이지 새로고침
+    if (loggedInUser) {
+      window.location.href = "pre1.html";
+    } else {
+    
+      const nextUrl = encodeURIComponent(target);
+      window.location.href = `login.html?next=${nextUrl}`;
+    }
   });
-}
 
+  const loginBtn = document.getElementById("loginBtn");
+  const loggedInUser = sessionStorage.getItem("loggedInUser");
 
+  if (loggedInUser) {
+   
+    const userData = JSON.parse(localStorage.getItem(loggedInUser));
+    const userName = userData && userData.name ? userData.name : loggedInUser;
 
-  </script>
+    loginBtn.textContent = `${userName} (Logout)`; 
+    loginBtn.href = "#";
+
+    
+    loginBtn.addEventListener("click", function () {
+      sessionStorage.removeItem("loggedInUser");
+      alert("로그아웃 되었습니다.");
+      location.reload(); 
+    });
+  } else {
+
+    loginBtn.textContent = "Login";
+    loginBtn.href = "login.html";
+  }
+</script>
 </body>
 
 </html>
